@@ -1,0 +1,96 @@
+body {
+  margin: 1;
+  font-size:23px;
+  font-family: Serif, Arial, sans-serif;
+}
+
+.bold {
+	font-size:18px;
+	font-weight:bold;
+}
+.contact {
+	text-align:center;
+}
+h1 {
+	background-color: #ffff62;
+	text-align:center;
+	font-size:57px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:0;
+}
+
+.vl {
+  border-left: 3px solid green;
+  height: 625px;
+  position: absolute;
+  left: 17%;
+  margin-left: -3px;
+  margin-top:44px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column.right h2 {
+  margin-top: 14px;
+  margin-bottom: 38px;
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+/* Left and right column */
+.column.side {
+  width: 17%;
+  padding:20px;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+  padding:20px;
+  
+}
+
+.column.right {
+	float:right;
+	width:17%;
+	text-align:right;
+	margin-right:20px;
+	border:3px dashed green;
+	margin-top:35px;
+	height:220px;
+	width:269px;
+	padding-right:20px;
+	
+	
+}
+
+/* Clear floats after the columns */
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle, .column.right {
+    width: 100%;
+  }
+ 
+.vl {
+    display: none;
+  }
+}
