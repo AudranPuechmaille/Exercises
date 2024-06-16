@@ -1,2 +1,2 @@
 # Exercises
-Exercises 1 to 4
+Exercise 1
